@@ -1,0 +1,27 @@
+List<string> days=new List<string>{'Monday','Tuesday','Wednesday'};
+
+//list/set iteration for loop
+for(string day:days)
+{
+    if(day=='Tuesday')
+    {
+        continue;
+    }
+    system.debug(day);
+} 
+// accessing items using list index and get method
+
+for(integer i=0;i< days.size();i++)
+{
+    if(days[i]=='Tuesday')
+    {
+        continue;
+        
+    }
+    if(days.get(i)=='Monday')
+    {
+       System.debug('hello'); 
+    }
+    System.debug(days[i]);
+}    
+
