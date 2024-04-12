@@ -1,0 +1,13 @@
+list<integer> fib = new integer[20];
+fib[0]=0;
+fib[1]=1;
+integer n=20;
+system.debug('0');
+system.debug('1');
+for(integer i=2;i<n;i++)
+{
+    fib[i]=fib[i-1]+fib[i-2];
+    system.debug(fib[i]);
+}
+
+
