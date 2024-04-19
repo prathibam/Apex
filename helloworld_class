@@ -9,3 +9,9 @@ public class HelloWorld
     }
 
 }
+
+
+//initializing the HelloWorld class
+
+HelloWorld var= new HelloWorld();
+var.print();
