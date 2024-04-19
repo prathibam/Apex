@@ -1,0 +1,20 @@
+public class HelloWorld
+{
+    //cant be accessed outside the class
+    private String greeting='Hello world';
+    
+    
+    public void print(){
+    
+        system.debug(greeting);
+    }
+
+}
+
+
+
+HelloWorld var= new HelloWorld();
+//system.debug(greeting);
+//this gives error since greeting is private
+//but we can access greeting using public method of same class
+var.print();
