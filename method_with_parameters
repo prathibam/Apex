@@ -1,0 +1,42 @@
+public class HelloWorld
+{
+     
+    
+       
+    public String getday(Integer n)
+    {
+        String day = ' ';
+        switch on n{
+        when 0 {
+                   day='Monday';
+        }
+        when 1 {
+                   day='Tuesday';
+        }
+        when 2 {
+                   day='Wednesday';
+        }
+        when 3 {
+                   day='Thursday';
+        }
+        when 4 {
+                   day='Friday';
+        }
+        when else { 
+        day='invalid number';
+        }
+}
+        
+      return day;   
+   
+    }
+
+}
+
+
+HelloWorld var= new HelloWorld();
+var.getday(0);
+system.debug(var.getday(20));
+
+   
+
