@@ -1,0 +1,11 @@
+public class HelloWorld
+{
+    String greeting='Hello world';
+    
+    
+    public void print(){
+    
+        system.debug(greeting);
+    }
+
+}
