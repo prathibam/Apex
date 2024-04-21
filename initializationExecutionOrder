@@ -1,0 +1,52 @@
+public class covid{
+    public integer recovered = 0;
+    public static integer recoveredInCountry = 0;
+    
+    //Initialization blocks
+    
+    {
+            system.debug('initialization block1 is called');
+    
+    
+    }
+    
+    {
+        system.debug('initialization block2 is called');
+    }
+    
+    
+    //static block
+    
+    static
+    {
+        system.debug('static block1 is called');
+    }
+    
+    static
+    {
+        system.debug('static block2 is called');
+        
+    }
+    
+    //constuctors
+    public covid()
+    {
+        system.debug('constructor is called');
+    
+    }
+    
+    
+    public covid(Integer recovered)
+    {
+        this();
+        system.debug('prameterised constructor is called');
+    
+    }    
+    
+    
+ }
+
+
+
+covid area=new covid(15);
+
