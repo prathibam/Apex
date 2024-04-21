@@ -1,0 +1,36 @@
+public class covid{
+    public integer recovered = 0;
+    public static integer recoveredInCountry = 0;
+    
+    
+    public covid()
+    {
+        system.debug('constructor is called');
+    
+    }
+
+
+
+
+covid area=new covid();
+
+
+   
+    
+    
+    
+    public void treatPatient()
+    {
+        recovered++;
+        recoveredInCountry++;
+    
+    }
+    
+    public static void printTreated()
+    {
+    
+        system.debug(recoveredInCountry);
+    }
+
+
+}
