@@ -1,0 +1,23 @@
+public class Fitness{
+
+public static Decimal calculatePace(Decimal distance,Decimal min){
+Decimal hr= min/60;
+Decimal pace=distance/hr;
+return pace;
+}
+
+public static Decimal calculateBMI(Decimal weight,Decimal height){
+Decimal BMI=(weight)/((height)*(height));
+return BMI;
+}
+}
+
+
+
+system.debug(Fitness.calculateBMI(65,1.2));
+system.debug(Fitness.calculatePace(12.6,82));
+
+
+
+
+
