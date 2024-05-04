@@ -1,0 +1,14 @@
+//Parent to child relationship
+//Parent object should be in FROM
+SELECT Name, RegNO,(SELECT Name, RollNumber FROM Students) FROM School
+//students is a relationship name not the object name
+// to get relationship nam, go to child object(child relationship name).
+//we can query multiple child objects
+
+SELECT Name,Phone,Website, (SELECT Name from Contacts) FROM Account
+
+SELECT Name,Phone,Website, (SELECT Name, Department, Email from Contacts WHERE Department='Finance'),(SELECT Name, Amount from Opportunities) FROM Account
+
+SELECT Name, (SELECT Name from books__r) FROM Author__c
+//only one level parent to child is supported
+//upto 20 related objects are supported.
