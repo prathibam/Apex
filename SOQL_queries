@@ -1,0 +1,30 @@
+SELECT Name,Phone FROM Account
+// use field names from fielsa and relationships of object.
+//Account ==> API name
+
+SELECT Name,Status,Email FROM Lead WHERE Status='closed - Converted'
+
+SELECT Name,Status,Email FROM Lead WHERE (Status='closed - Converted' OR Status='closed - Not Converted') AND LeadSource='Web'
+
+SELECT Name,Status,Email FROM Lead WHERE Status IN('closed - Converted','closed - Not Converted') AND LeadSource='Web'
+
+//LIKE is case insensitive
+SELECT Name,Status,Email FROM Lead WHERE Status LIKE 'closed%'
+
+SELECT Name,Status,Email FROM Lead ORDER BY Company
+
+SELECT Name,Status,Email FROM Lead ORDER BY Company ASC
+
+SELECT Name,Status,Email FROM Lead ORDER BY Company DESC
+
+SELECT Name,Status,Email FROM Lead ORDER BY CreatedDate NULLS FIRST
+
+SELECT Name,Status,Email FROM Lead ORDER BY CreatedDate NULLS LAST
+
+SELECT Name,Status,Email FROM Lead LIMIT 10
+
+SELECT Name,Status,Email FROM Lead
+
+SELECT Name,Status,Email FROM Lead ORDER BY CreatedDate DESC LIMIT 1
+
+SELECT Name,Status,Email FROM Lead ORDER BY CreatedDate DESC OFFSET 5
