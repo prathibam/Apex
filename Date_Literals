@@ -1,0 +1,8 @@
+SELECT Name, Status, CreatedDate FROM Lead WHERE CreatedDate=TODAY
+
+SELECT Name, Status, CreatedDate FROM Lead WHERE CreatedDate>YESTERDAY
+
+SELECT Name, Status, CreatedDate FROM Lead WHERE CreatedDate>LAST_N_DAYS:10
+
+SELECT Name, Status, CreatedDate FROM Lead WHERE CreatedDate=LAST_N_DAYS:10
+
