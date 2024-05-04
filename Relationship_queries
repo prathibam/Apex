@@ -12,3 +12,9 @@ SELECT Name,Phone,Website, (SELECT Name, Department, Email from Contacts WHERE D
 SELECT Name, (SELECT Name from books__r) FROM Author__c
 //only one level parent to child is supported
 //upto 20 related objects are supported.
+
+
+//child to parent relationship queries
+//only one parent
+
+SELECT Name, RegNO,School.Name, school.RollNumber FROM Students // here school is a relationship name // refer field names
